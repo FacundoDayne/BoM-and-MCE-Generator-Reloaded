@@ -22,8 +22,7 @@ namespace BoM_and_MCE_Generator_Reloaded
         public LandingForm()
         {
             InitializeComponent();
-            login1 = new Login();
-            landingForm = this; Controls.Add(this.login1);
+            landingForm = this; 
             if (!isLoggedIn) { showLogin(); }
             //LITERAL MAGIC CODE, REMOVES FLICKERING
             typeof(Login).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, login1, new object[] { true });

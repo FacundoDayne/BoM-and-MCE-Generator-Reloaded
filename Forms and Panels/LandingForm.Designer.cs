@@ -77,6 +77,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(994, 603);
+            Controls.Add(login1);
             Controls.Add(sidePanel1);
             Controls.Add(_current);
             Margin = new Padding(4, 3, 4, 3);
