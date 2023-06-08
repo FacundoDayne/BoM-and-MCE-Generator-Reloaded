@@ -88,5 +88,6 @@ namespace BoM_and_MCE_Generator_Reloaded
             LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
             this.Hide();
         }
+
     }
 }

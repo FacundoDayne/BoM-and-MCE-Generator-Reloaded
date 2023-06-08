@@ -59,5 +59,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             }
             tableLayoutPanel1.ResumeLayout();
         }
+
+        private void MainPanel_GenerateMCE_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             _current.Location = new Point(-2, 0);
             _current.Margin = new Padding(0);
             _current.Name = "_current";
-            _current.Size = new Size(653, 603);
+            _current.Size = new Size(705, 603);
             _current.TabIndex = 4;
             _current.Load += _current_Load;
             // 
@@ -65,10 +65,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             sidePanel1.BackColor = Color.FromArgb(152, 136, 146);
             sidePanel1.Dock = DockStyle.Right;
-            sidePanel1.Location = new Point(651, 0);
-            sidePanel1.Margin = new Padding(0);
+            sidePanel1.Location = new Point(700, 0);
+            sidePanel1.Margin = new Padding(4, 3, 4, 3);
             sidePanel1.Name = "sidePanel1";
-            sidePanel1.Size = new Size(343, 603);
+            sidePanel1.Size = new Size(294, 603);
             sidePanel1.TabIndex = 5;
             // 
             // LandingForm

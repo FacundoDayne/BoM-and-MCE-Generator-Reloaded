@@ -66,7 +66,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             btnForget.Anchor = AnchorStyles.None;
             btnForget.AutoSize = true;
             btnForget.LinkColor = Color.Black;
-            btnForget.Location = new Point(267, 289);
+            btnForget.Location = new Point(259, 287);
             btnForget.Margin = new Padding(4, 0, 4, 0);
             btnForget.Name = "btnForget";
             btnForget.Size = new Size(100, 15);
@@ -81,10 +81,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             roundButton1.FlatAppearance.BorderSize = 0;
             roundButton1.FlatStyle = FlatStyle.Flat;
             roundButton1.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            roundButton1.Location = new Point(31, 408);
+            roundButton1.Location = new Point(57, 426);
             roundButton1.Margin = new Padding(4, 3, 4, 3);
             roundButton1.Name = "roundButton1";
-            roundButton1.Size = new Size(355, 59);
+            roundButton1.Size = new Size(304, 51);
             roundButton1.TabIndex = 5;
             roundButton1.Text = "SIGN UP";
             roundButton1.UseVisualStyleBackColor = false;
@@ -96,10 +96,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogin.Location = new Point(31, 329);
+            btnLogin.Location = new Point(57, 358);
             btnLogin.Margin = new Padding(4, 3, 4, 3);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(355, 59);
+            btnLogin.Size = new Size(304, 51);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "LOGIN";
             btnLogin.UseVisualStyleBackColor = false;
@@ -109,21 +109,21 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             txtPassword.Anchor = AnchorStyles.Top;
             txtPassword.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(43, 261);
+            txtPassword.Location = new Point(67, 226);
             txtPassword.Margin = new Padding(4, 3, 4, 3);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(331, 38);
+            txtPassword.Size = new Size(284, 38);
             txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
             txtUsername.Anchor = AnchorStyles.Top;
             txtUsername.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(43, 183);
+            txtUsername.Location = new Point(67, 159);
             txtUsername.Margin = new Padding(4, 3, 4, 3);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(331, 38);
+            txtUsername.Size = new Size(284, 38);
             txtUsername.TabIndex = 1;
             // 
             // lblPassword
@@ -131,7 +131,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             lblPassword.Anchor = AnchorStyles.Top;
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPassword.Location = new Point(28, 237);
+            lblPassword.Location = new Point(54, 205);
             lblPassword.Margin = new Padding(4, 0, 4, 0);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(75, 18);
@@ -143,7 +143,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             lblUsername.Anchor = AnchorStyles.Top;
             lblUsername.AutoSize = true;
             lblUsername.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsername.Location = new Point(28, 159);
+            lblUsername.Location = new Point(54, 138);
             lblUsername.Margin = new Padding(4, 0, 4, 0);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(77, 18);
@@ -155,7 +155,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Arial Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(151, 38);
+            label1.Location = new Point(159, 33);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(100, 27);

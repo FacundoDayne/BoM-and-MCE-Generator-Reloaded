@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            timer1 = new System.Windows.Forms.Timer(components);
+            timer2 = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            timer1.Tick += timer1_Tick;
             // 
             // timer2
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            timer2.Tick += timer2_Tick;
             // 
             // MainPanel_LandingPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(160)))), ((int)(((byte)(174)))));
-            this.BackgroundImage = global::BoM_and_MCE_Generator_Reloaded.Properties.Resources.home_bg;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "MainPanel_LandingPanel";
-            this.Size = new System.Drawing.Size(698, 603);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(169, 160, 174);
+            BackgroundImage = Properties.Resources.home_bg;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            DoubleBuffered = true;
+            Margin = new Padding(0);
+            Name = "MainPanel_LandingPanel";
+            Size = new Size(698, 603);
+            ResumeLayout(false);
         }
 
         #endregion
