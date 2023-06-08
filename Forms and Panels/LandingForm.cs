@@ -1,4 +1,5 @@
 using BoM_and_MCE_Generator_Reloaded.Custom_Usercontrols;
+using BoM_and_MCE_Generator_Reloaded.Miscellaneous_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace BoM_and_MCE_Generator_Reloaded
     public partial class LandingForm : Form
     {
         public bool isLoggedIn = false;
+        public UserData userData;
         public static LandingForm landingForm;
         private UserControl currentMainPanel;
         public string username = "";
@@ -22,7 +24,9 @@ namespace BoM_and_MCE_Generator_Reloaded
         public LandingForm()
         {
             InitializeComponent();
-            landingForm = this; 
+            userData = new UserData();
+            landingForm = this;
+            Controls.Add(login1);
             if (!isLoggedIn) { showLogin(); }
             //LITERAL MAGIC CODE, REMOVES FLICKERING
             typeof(Login).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, login1, new object[] { true });

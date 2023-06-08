@@ -32,7 +32,7 @@ namespace BoM_and_MCE_Generator_Reloaded
         {
             pnlLogin = new Panel();
             btnForget = new LinkLabel();
-            roundButton1 = new RoundButton();
+            btnSignUp = new RoundButton();
             btnLogin = new RoundButton();
             txtPassword = new TextBox();
             txtUsername = new TextBox();
@@ -47,7 +47,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             pnlLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlLogin.BackColor = Color.White;
             pnlLogin.Controls.Add(btnForget);
-            pnlLogin.Controls.Add(roundButton1);
+            pnlLogin.Controls.Add(btnSignUp);
             pnlLogin.Controls.Add(btnLogin);
             pnlLogin.Controls.Add(txtPassword);
             pnlLogin.Controls.Add(txtUsername);
@@ -74,20 +74,20 @@ namespace BoM_and_MCE_Generator_Reloaded
             btnForget.TabStop = true;
             btnForget.Text = "Forgot Password?";
             // 
-            // roundButton1
+            // btnSignUp
             // 
-            roundButton1.Anchor = AnchorStyles.Bottom;
-            roundButton1.BackColor = Color.FromArgb(152, 136, 146);
-            roundButton1.FlatAppearance.BorderSize = 0;
-            roundButton1.FlatStyle = FlatStyle.Flat;
-            roundButton1.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            roundButton1.Location = new Point(57, 426);
-            roundButton1.Margin = new Padding(4, 3, 4, 3);
-            roundButton1.Name = "roundButton1";
-            roundButton1.Size = new Size(304, 51);
-            roundButton1.TabIndex = 5;
-            roundButton1.Text = "SIGN UP";
-            roundButton1.UseVisualStyleBackColor = false;
+            btnSignUp.Anchor = AnchorStyles.Bottom;
+            btnSignUp.BackColor = Color.FromArgb(152, 136, 146);
+            btnSignUp.FlatAppearance.BorderSize = 0;
+            btnSignUp.FlatStyle = FlatStyle.Flat;
+            btnSignUp.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignUp.Location = new Point(57, 426);
+            btnSignUp.Margin = new Padding(4, 3, 4, 3);
+            btnSignUp.Name = "btnSignUp";
+            btnSignUp.Size = new Size(304, 51);
+            btnSignUp.TabIndex = 5;
+            btnSignUp.Text = "SIGN UP";
+            btnSignUp.UseVisualStyleBackColor = false;
             // 
             // btnLogin
             // 
@@ -185,7 +185,7 @@ namespace BoM_and_MCE_Generator_Reloaded
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private RoundButton btnLogin;
-        private RoundButton roundButton1;
+        private RoundButton btnSignUp;
         private System.Windows.Forms.LinkLabel btnForget;
     }
 }
