@@ -1,5 +1,4 @@
-﻿using BoM_and_MCE_Generator_Reloaded;
-
+﻿
 namespace BoM_and_MCE_Generator_Reloaded
 {
     partial class Login
@@ -30,151 +29,144 @@ namespace BoM_and_MCE_Generator_Reloaded
         /// </summary>
         private void InitializeComponent()
         {
-            pnlLogin = new Panel();
-            btnForget = new LinkLabel();
-            roundButton1 = new RoundButton();
-            btnLogin = new RoundButton();
-            txtPassword = new TextBox();
-            txtUsername = new TextBox();
-            lblPassword = new Label();
-            lblUsername = new Label();
-            label1 = new Label();
-            pnlLogin.SuspendLayout();
-            SuspendLayout();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnForget = new System.Windows.Forms.LinkLabel();
+            this.roundButton1 = new RoundButton();
+            this.btnLogin = new RoundButton();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlLogin.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlLogin
             // 
-            pnlLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pnlLogin.BackColor = Color.White;
-            pnlLogin.Controls.Add(btnForget);
-            pnlLogin.Controls.Add(roundButton1);
-            pnlLogin.Controls.Add(btnLogin);
-            pnlLogin.Controls.Add(txtPassword);
-            pnlLogin.Controls.Add(txtUsername);
-            pnlLogin.Controls.Add(lblPassword);
-            pnlLogin.Controls.Add(lblUsername);
-            pnlLogin.Controls.Add(label1);
-            pnlLogin.Location = new Point(288, 38);
-            pnlLogin.Margin = new Padding(4, 3, 4, 3);
-            pnlLogin.MinimumSize = new Size(400, 507);
-            pnlLogin.Name = "pnlLogin";
-            pnlLogin.Size = new Size(418, 546);
-            pnlLogin.TabIndex = 2;
+            this.pnlLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlLogin.BackColor = System.Drawing.Color.White;
+            this.pnlLogin.Controls.Add(this.btnForget);
+            this.pnlLogin.Controls.Add(this.roundButton1);
+            this.pnlLogin.Controls.Add(this.btnLogin);
+            this.pnlLogin.Controls.Add(this.txtPassword);
+            this.pnlLogin.Controls.Add(this.txtUsername);
+            this.pnlLogin.Controls.Add(this.lblPassword);
+            this.pnlLogin.Controls.Add(this.lblUsername);
+            this.pnlLogin.Controls.Add(this.label1);
+            this.pnlLogin.Location = new System.Drawing.Point(288, 38);
+            this.pnlLogin.MinimumSize = new System.Drawing.Size(400, 507);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(418, 546);
+            this.pnlLogin.TabIndex = 2;
             // 
             // btnForget
             // 
-            btnForget.Anchor = AnchorStyles.None;
-            btnForget.AutoSize = true;
-            btnForget.LinkColor = Color.Black;
-            btnForget.Location = new Point(259, 287);
-            btnForget.Margin = new Padding(4, 0, 4, 0);
-            btnForget.Name = "btnForget";
-            btnForget.Size = new Size(100, 15);
-            btnForget.TabIndex = 7;
-            btnForget.TabStop = true;
-            btnForget.Text = "Forgot Password?";
+            this.btnForget.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnForget.AutoSize = true;
+            this.btnForget.LinkColor = System.Drawing.Color.Black;
+            this.btnForget.Location = new System.Drawing.Point(259, 287);
+            this.btnForget.Name = "btnForget";
+            this.btnForget.Size = new System.Drawing.Size(92, 13);
+            this.btnForget.TabIndex = 7;
+            this.btnForget.TabStop = true;
+            this.btnForget.Text = "Forgot Password?";
             // 
             // roundButton1
             // 
-            roundButton1.Anchor = AnchorStyles.Bottom;
-            roundButton1.BackColor = Color.FromArgb(152, 136, 146);
-            roundButton1.FlatAppearance.BorderSize = 0;
-            roundButton1.FlatStyle = FlatStyle.Flat;
-            roundButton1.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            roundButton1.Location = new Point(57, 426);
-            roundButton1.Margin = new Padding(4, 3, 4, 3);
-            roundButton1.Name = "roundButton1";
-            roundButton1.Size = new Size(304, 51);
-            roundButton1.TabIndex = 5;
-            roundButton1.Text = "SIGN UP";
-            roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(136)))), ((int)(((byte)(146)))));
+            this.roundButton1.FlatAppearance.BorderSize = 0;
+            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton1.Location = new System.Drawing.Point(57, 426);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(304, 51);
+            this.roundButton1.TabIndex = 5;
+            this.roundButton1.Text = "SIGN UP";
+            this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // btnLogin
             // 
-            btnLogin.Anchor = AnchorStyles.Bottom;
-            btnLogin.BackColor = Color.FromArgb(152, 136, 146);
-            btnLogin.FlatAppearance.BorderSize = 0;
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogin.Location = new Point(57, 358);
-            btnLogin.Margin = new Padding(4, 3, 4, 3);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(304, 51);
-            btnLogin.TabIndex = 3;
-            btnLogin.Text = "LOGIN";
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(136)))), ((int)(((byte)(146)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(57, 358);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(304, 51);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
-            txtPassword.Anchor = AnchorStyles.Top;
-            txtPassword.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(67, 226);
-            txtPassword.Margin = new Padding(4, 3, 4, 3);
-            txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(284, 38);
-            txtPassword.TabIndex = 2;
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(67, 226);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(284, 38);
+            this.txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
-            txtUsername.Anchor = AnchorStyles.Top;
-            txtUsername.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(67, 159);
-            txtUsername.Margin = new Padding(4, 3, 4, 3);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(284, 38);
-            txtUsername.TabIndex = 1;
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(67, 159);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(284, 38);
+            this.txtUsername.TabIndex = 1;
             // 
             // lblPassword
             // 
-            lblPassword.Anchor = AnchorStyles.Top;
-            lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPassword.Location = new Point(54, 205);
-            lblPassword.Margin = new Padding(4, 0, 4, 0);
-            lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(75, 18);
-            lblPassword.TabIndex = 0;
-            lblPassword.Text = "Password";
+            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(54, 205);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(75, 18);
+            this.lblPassword.TabIndex = 0;
+            this.lblPassword.Text = "Password";
             // 
             // lblUsername
             // 
-            lblUsername.Anchor = AnchorStyles.Top;
-            lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsername.Location = new Point(54, 138);
-            lblUsername.Margin = new Padding(4, 0, 4, 0);
-            lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(77, 18);
-            lblUsername.TabIndex = 1;
-            lblUsername.Text = "Username";
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(54, 138);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(77, 18);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Username";
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(159, 33);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 27);
-            label1.TabIndex = 0;
-            label1.Text = "Account";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(159, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 27);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Account";
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 192, 192);
-            Controls.Add(pnlLogin);
-            Margin = new Padding(4, 3, 4, 3);
-            Name = "Login";
-            Size = new Size(1010, 642);
-            Load += Login_Load;
-            pnlLogin.ResumeLayout(false);
-            pnlLogin.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.pnlLogin);
+            this.Name = "Login";
+            this.Size = new System.Drawing.Size(1010, 642);
+            this.Load += new System.EventHandler(this.Login_Load);
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

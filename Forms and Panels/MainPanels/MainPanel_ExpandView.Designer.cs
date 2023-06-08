@@ -202,7 +202,7 @@ namespace BoM_and_MCE_Generator_Reloaded.Forms_and_Panels.MainPanels
             btnDescription.Name = "btnDescription";
             btnDescription.Size = new Size(156, 54);
             btnDescription.TabIndex = 18;
-            btnDescription.Text = "Button";
+            btnDescription.Text = "Inspect Cell";
             btnDescription.UseVisualStyleBackColor = false;
             // 
             // btnGenerate

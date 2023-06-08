@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 
 namespace BoM_and_MCE_Generator_Reloaded
 {
@@ -22,7 +15,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             this.SetStyle(
             System.Windows.Forms.ControlStyles.UserPaint |
             System.Windows.Forms.ControlStyles.AllPaintingInWmPaint |
-            System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer, true);
+            System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer,true);
             this.txtUsername.KeyPress += keyPress;
             this.txtPassword.KeyPress += keyPress;
             this.VisibleChanged += Login_Load;
@@ -36,7 +29,7 @@ namespace BoM_and_MCE_Generator_Reloaded
 
         private void keyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
+            if(e.KeyChar == (char)Keys.Enter)
             {
                 btnLogin_Click(sender, e);
             }
@@ -44,7 +37,7 @@ namespace BoM_and_MCE_Generator_Reloaded
 
         private void Login_Paint(object sender, PaintEventArgs e)
         {
-            Control control = (Control)sender;
+            Control control = (Control)sender;         
             using (SolidBrush brush1 = new SolidBrush(Color.FromArgb(152, 136, 146)))
             using (SolidBrush brush2 = new SolidBrush(Color.FromArgb(134, 106, 124)))
             {
@@ -73,6 +66,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             Control control = (Control)sender;
             RaisePaintEvent(control);
             CenterPanel();
+            Debug.WriteLine("Accomodating...");
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -88,6 +82,5 @@ namespace BoM_and_MCE_Generator_Reloaded
             LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
             this.Hide();
         }
-
     }
 }

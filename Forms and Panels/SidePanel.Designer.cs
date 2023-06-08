@@ -134,7 +134,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             DropDownMenuPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             DropDownMenuPanel.Controls.Add(btnLogout, 0, 1);
             DropDownMenuPanel.Controls.Add(btnAccount, 0, 0);
-            DropDownMenuPanel.Location = new Point(187, 35);
+            DropDownMenuPanel.Location = new Point(187, 32);
             DropDownMenuPanel.Name = "DropDownMenuPanel";
             DropDownMenuPanel.RowCount = 2;
             DropDownMenuPanel.RowStyles.Add(new RowStyle());
@@ -236,9 +236,9 @@ namespace BoM_and_MCE_Generator_Reloaded
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(152, 136, 146);
+            Controls.Add(DropDownMenuPanel);
             Controls.Add(btnViewBOM);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(DropDownMenuPanel);
             Controls.Add(btnGenerateMCE);
             Controls.Add(btnGenerateBOM);
             Controls.Add(btnHome);

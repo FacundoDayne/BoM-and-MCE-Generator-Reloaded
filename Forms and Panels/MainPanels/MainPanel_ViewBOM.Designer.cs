@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new Label();
+            this.tableLayoutPanel1 = new TableLayoutPanel();
             this.SuspendLayout();
             // 
             // label3

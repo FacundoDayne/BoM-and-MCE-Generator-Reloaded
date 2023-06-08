@@ -1,3 +1,5 @@
+using BoM_and_MCE_Generator_Reloaded.Forms_and_Panels;
+
 namespace BoM_and_MCE_Generator_Reloaded
 {
     internal static class Program
