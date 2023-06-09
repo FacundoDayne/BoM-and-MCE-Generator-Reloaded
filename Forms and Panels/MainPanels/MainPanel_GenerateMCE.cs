@@ -19,6 +19,10 @@ namespace BoM_and_MCE_Generator_Reloaded
     {
         PreviousBOM slotted;
         BillOfMaterials billOfMaterials;
+        public MainPanel_GenerateMCE()
+        {
+            InitializeComponent();
+        }
         public MainPanel_GenerateMCE(PreviousBOM slotted)
         {
             InitializeComponent();

@@ -56,7 +56,7 @@ namespace BoM_and_MCE_Generator_Reloaded
                     LandingForm.landingForm.maskChange(new MainPanel_GenerateBOM());
                     break;
                 case "btnGenerateMCE":
-                    LandingForm.landingForm.maskChange(new MainPanel_GenerateMCE(null));
+                    LandingForm.landingForm.maskChange(new MainPanel_GenerateMCE());
                     break;
                 case "btnViewBOM":
                     LandingForm.landingForm.maskChange(new MainPanel_ViewBOM());

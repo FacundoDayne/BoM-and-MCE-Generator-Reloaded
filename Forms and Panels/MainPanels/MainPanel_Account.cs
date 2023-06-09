@@ -27,6 +27,9 @@ namespace BoM_and_MCE_Generator_Reloaded
             tableLayoutPanel1.Controls.Add(txtConfirmPassword, 1, 2);
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.Size = new Size(472, 135);
+            lblBoMs.Text = "0";
+            btnDiscard.Text = "Return to Login";
+            btnSave.Text = "Sign up";
         }
 
         //For existing users
