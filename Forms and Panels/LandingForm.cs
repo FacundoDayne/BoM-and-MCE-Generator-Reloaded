@@ -32,11 +32,9 @@ namespace BoM_and_MCE_Generator_Reloaded
             typeof(Login).InvokeMember("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic, null, login1, new object[] { true });
             Stack<PreviousBOM> a = new SampleData(20).previousBOMs;
         }
-
-
         public void changeText()
         {
-            //sidePanel1.lblUsername.Text = username;
+            sidePanel1.lblUsername.Text = username;
         }
 
         public void showLogin()

@@ -92,6 +92,7 @@ namespace BoM_and_MCE_Generator_Reloaded
         {
             LandingForm.landingForm.username = txtUsername.Text.ToString();
             LandingForm.landingForm.userData.Username = txtUsername.Text;
+            LandingForm.landingForm.changeText();
             LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
             this.Hide();
         }
