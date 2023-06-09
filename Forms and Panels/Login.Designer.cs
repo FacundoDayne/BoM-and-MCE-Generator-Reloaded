@@ -73,6 +73,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             btnForget.TabIndex = 7;
             btnForget.TabStop = true;
             btnForget.Text = "Forgot Password?";
+            btnForget.Visible = false;
             // 
             // btnSignUp
             // 

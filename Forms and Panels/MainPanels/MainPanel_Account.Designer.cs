@@ -24,8 +24,8 @@ namespace BoM_and_MCE_Generator_Reloaded
 
         private void InitializeComponent()
         {
-            label3 = new Label();
-            label1 = new Label();
+            lblTitle = new Label();
+            label1 = new Label();   
             lblCurrentPassword = new Label();
             btnDiscard = new RoundButton();
             btnSave = new RoundButton();
@@ -58,16 +58,16 @@ namespace BoM_and_MCE_Generator_Reloaded
             tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
-            // label3
+            // lblTitle
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(43, 33);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(95, 25);
-            label3.TabIndex = 4;
-            label3.Text = "Account";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitle.Location = new Point(43, 33);
+            lblTitle.Margin = new Padding(2, 0, 2, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(95, 25);
+            lblTitle.TabIndex = 4;
+            lblTitle.Text = "Account";
             // 
             // label1
             // 
@@ -416,7 +416,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             Controls.Add(tableLayoutPanel3);
             Controls.Add(btnDiscard);
             Controls.Add(btnSave);
-            Controls.Add(label3);
+            Controls.Add(lblTitle);
             Name = "MainPanel_Account";
             Size = new Size(696, 601);
             tableLayoutPanel1.ResumeLayout(false);
@@ -430,7 +430,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             PerformLayout();
         }
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCurrentPassword;
         private RoundButton btnSave;

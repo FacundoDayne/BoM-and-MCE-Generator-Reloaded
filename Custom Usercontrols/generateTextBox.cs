@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,21 +15,21 @@ namespace BoM_and_MCE_Generator_Reloaded
         public generateTextBox(string name)
         {
             InitializeComponent();
-            this.SetStyle(
-            ControlStyles.UserPaint |
-            ControlStyles.AllPaintingInWmPaint |
-            ControlStyles.OptimizedDoubleBuffer,
-            true);
             this.Name = name;
+            MainPanel_GenerateMCE.generateMCEInstance.applyChangesClicked += applyChangesClicked;
+            this.ForeColor = Color.Black;
         }
         public generateTextBox()
         {
             InitializeComponent();
-            this.SetStyle(
-            ControlStyles.UserPaint |
-            ControlStyles.AllPaintingInWmPaint |
-            ControlStyles.OptimizedDoubleBuffer,
-            true);
+            this.ForeColor = Color.Black;
+            MainPanel_GenerateMCE.generateMCEInstance.applyChangesClicked += applyChangesClicked;
+        }
+        
+        
+        private void applyChangesClicked(object sender, EventArgs e)
+        {
+            this.Text = MainPanel_GenerateMCE.generateMCEInstance.markUp.ToString();
         }
     }
 }

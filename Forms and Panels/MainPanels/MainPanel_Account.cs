@@ -10,7 +10,7 @@ using System.Security.Authentication;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BoM_and_MCE_Generator_Reloaded 
+namespace BoM_and_MCE_Generator_Reloaded
 {
     public partial class MainPanel_Account : UserControl
     {
@@ -30,6 +30,34 @@ namespace BoM_and_MCE_Generator_Reloaded
             lblBoMs.Text = "0";
             btnDiscard.Text = "Return to Login";
             btnSave.Text = "Sign up";
+            btnSave.Click += signUp;
+            btnDiscard.Click += returnToLogin;
+            lblTitle.Text = "Sign up";
+        }
+
+        private void returnToLogin(object? sender, EventArgs e)
+        {
+            LandingForm.landingForm.showLogin();
+        }
+
+        private void signUp(object? sender, EventArgs e)
+        {
+            if (txtPassword.Text == txtConfirmPassword.Text)
+            {
+                LandingForm.landingForm.userData.Username = txtUsername.Text;
+                LandingForm.landingForm.userData.Password = txtConfirmPassword.Text;
+                LandingForm.landingForm.userData.Birthdate = dtpBirthDate.Value;
+                LandingForm.landingForm.userData.Access = lblAccess.Text;
+                LandingForm.landingForm.userData.BoMs = 0;
+                MessageBox.Show("Sign up Successful!");
+                LandingForm.landingForm.showLogin();
+            }
+            else
+            {
+                MessageBox.Show("Passwords do not match");
+                txtPassword.Select();
+            }
+            
         }
 
         //For existing users
@@ -45,8 +73,22 @@ namespace BoM_and_MCE_Generator_Reloaded
             tableLayoutPanel1.Controls.Add(txtConfirmPassword, 1, 3);
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.Size = new Size(472, 135);
+            tableLayoutPanel1.Size = new Size(472, 135); 
+            btnSave.Click += save;
+            btnDiscard.Click += returnToMain;
         }
 
+        private void returnToMain(object? sender, EventArgs e)
+        {
+            LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
+        }
+
+        private void save(object? sender, EventArgs e)
+        {
+            if (txtPassword.Text == txtConfirmPassword.Text)
+            {
+                LandingForm.landingForm.userData.Password = txtConfirmPassword.Text;
+            }
+        }
     }
 }

@@ -62,7 +62,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             // sidePanel1
             // 
-            sidePanel1.BackColor = Color.FromArgb(152, 136, 146);
+            sidePanel1.BackColor = Color.FromArgb(112, 70, 97);
             sidePanel1.Dock = DockStyle.Right;
             sidePanel1.Location = new Point(700, 0);
             sidePanel1.Margin = new Padding(4, 3, 4, 3);

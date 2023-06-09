@@ -18,13 +18,21 @@ namespace BoM_and_MCE_Generator_Reloaded
     public partial class MainPanel_GenerateMCE : UserControl
     {
         PreviousBOM slotted;
-        BillOfMaterials billOfMaterials;
+        public BillOfMaterials billOfMaterials;
+        public static MainPanel_GenerateMCE generateMCEInstance;
+        public event EventHandler applyChangesClicked;
+        public event EventHandler getTotal;
+        public int markUp = 0;
+        public int index = 0;
+
         public MainPanel_GenerateMCE()
         {
             InitializeComponent();
+            generateMCEInstance = this;
         }
         public MainPanel_GenerateMCE(PreviousBOM slotted)
         {
+            generateMCEInstance = this;
             InitializeComponent();
             this.slotted = slotted;
             lblCost.Text = "Php " + slotted.getTotal().ToString("F2");
@@ -38,6 +46,24 @@ namespace BoM_and_MCE_Generator_Reloaded
             ControlStyles.AllPaintingInWmPaint |
             ControlStyles.OptimizedDoubleBuffer,
             true);
+            btnApply.Click += (sender, e) => applyChanges();
+        }
+        private void applyChanges()
+        {
+            index = 0;
+            try
+            {
+                markUp = int.Parse(txtMarkUp.Text);
+                applyChangesClicked?.Invoke(this, EventArgs.Empty);
+                for(; index < slotted.getBillOfMaterials().getName().Count; index++)
+                {
+                    getTotal.Invoke(this, EventArgs.Empty);
+                }
+            }
+            catch (FormatException v)
+            {
+                MessageBox.Show("Please input the correct information");
+            }            
         }
 
         protected override CreateParams CreateParams
@@ -58,15 +84,11 @@ namespace BoM_and_MCE_Generator_Reloaded
                 tableLayoutPanel1.Controls.Add(new generateLabel(billOfMaterials.getName()[i].ToString()));
                 tableLayoutPanel1.Controls.Add(new generateLabel(billOfMaterials.getQuantity()[i].ToString()));
                 tableLayoutPanel1.Controls.Add(new generateLabel(billOfMaterials.getPrice()[i].ToString()));
-                tableLayoutPanel1.Controls.Add(new generateTextBox("txtMarkup#" + i));
-                tableLayoutPanel1.Controls.Add(new generateLabel(billOfMaterials.getQuantity()[i] * billOfMaterials.getPrice()[i]));
+                tableLayoutPanel1.Controls.Add(new generateTextBox("txtMarkup" + i));
+                tableLayoutPanel1.Controls.Add(new generateLabel(billOfMaterials.getQuantity()[i] * billOfMaterials.getPrice()[i], i));
             }
             tableLayoutPanel1.ResumeLayout();
         }
 
-        private void MainPanel_GenerateMCE_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
