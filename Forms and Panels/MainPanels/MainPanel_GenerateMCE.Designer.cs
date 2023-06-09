@@ -44,7 +44,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             label7 = new Label();
             label8 = new Label();
             label6 = new Label();
-            btnEditCell = new RoundButton();
+            btnApply = new RoundButton();
+            label11 = new Label();
+            txtMarkUp = new TextBox();
+            label12 = new Label();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -164,7 +167,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             tableLayoutPanel1.Controls.Add(label8, 1, 0);
             tableLayoutPanel1.Controls.Add(label6, 0, 0);
             tableLayoutPanel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            tableLayoutPanel1.Location = new Point(24, 187);
+            tableLayoutPanel1.Location = new Point(21, 247);
             tableLayoutPanel1.Margin = new Padding(3, 3, 3, 20);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.Padding = new Padding(5);
@@ -234,24 +237,53 @@ namespace BoM_and_MCE_Generator_Reloaded
             label6.Text = "Material Name";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnEditCell
+            // btnApply
             // 
-            btnEditCell.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnEditCell.BackColor = Color.FromArgb(112, 70, 97);
-            btnEditCell.FlatAppearance.BorderColor = Color.White;
-            btnEditCell.FlatAppearance.BorderSize = 3;
-            btnEditCell.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
-            btnEditCell.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
-            btnEditCell.FlatStyle = FlatStyle.Flat;
-            btnEditCell.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEditCell.ForeColor = Color.White;
-            btnEditCell.Location = new Point(529, 72);
-            btnEditCell.Margin = new Padding(4, 3, 4, 3);
-            btnEditCell.Name = "btnEditCell";
-            btnEditCell.Size = new Size(156, 54);
-            btnEditCell.TabIndex = 24;
-            btnEditCell.Text = "Edit Cell";
-            btnEditCell.UseVisualStyleBackColor = false;
+            btnApply.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnApply.BackColor = Color.FromArgb(112, 70, 97);
+            btnApply.FlatAppearance.BorderColor = Color.White;
+            btnApply.FlatAppearance.BorderSize = 3;
+            btnApply.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
+            btnApply.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
+            btnApply.FlatStyle = FlatStyle.Flat;
+            btnApply.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnApply.ForeColor = Color.White;
+            btnApply.Location = new Point(210, 187);
+            btnApply.Margin = new Padding(4, 3, 4, 3);
+            btnApply.Name = "btnApply";
+            btnApply.Size = new Size(156, 54);
+            btnApply.TabIndex = 24;
+            btnApply.Text = "Apply";
+            btnApply.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(21, 180);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(130, 18);
+            label11.TabIndex = 26;
+            label11.Text = "Introduce Mark Up";
+            // 
+            // txtMarkUp
+            // 
+            txtMarkUp.Location = new Point(43, 201);
+            txtMarkUp.Name = "txtMarkUp";
+            txtMarkUp.Size = new Size(121, 23);
+            txtMarkUp.TabIndex = 27;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(171, 201);
+            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(31, 18);
+            label12.TabIndex = 28;
+            label12.Text = "(%)";
             // 
             // MainPanel_GenerateMCE
             // 
@@ -259,8 +291,11 @@ namespace BoM_and_MCE_Generator_Reloaded
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
+            Controls.Add(label12);
+            Controls.Add(txtMarkUp);
+            Controls.Add(label11);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(btnEditCell);
+            Controls.Add(btnApply);
             Controls.Add(lblCost);
             Controls.Add(lblDate);
             Controls.Add(lblID);
@@ -270,10 +305,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(label3);
+            ForeColor = Color.Black;
             Margin = new Padding(4, 3, 4, 3);
             Name = "MainPanel_GenerateMCE";
             Size = new Size(698, 603);
-            Load += MainPanel_GenerateMCE_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -290,12 +325,15 @@ namespace BoM_and_MCE_Generator_Reloaded
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private RoundButton btnEditCell;
+        private RoundButton btnApply;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private Label label11;
+        private TextBox txtMarkUp;
+        private Label label12;
     }
 }

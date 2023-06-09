@@ -51,7 +51,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             btnGenerateBOM.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnGenerateBOM.BackColor = Color.FromArgb(112, 70, 97);
-            btnGenerateBOM.FlatAppearance.BorderSize = 3;
+            btnGenerateBOM.FlatAppearance.BorderColor = Color.Silver;
             btnGenerateBOM.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
             btnGenerateBOM.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
             btnGenerateBOM.FlatStyle = FlatStyle.Flat;
@@ -69,7 +69,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             btnGenerateMCE.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnGenerateMCE.BackColor = Color.FromArgb(112, 70, 97);
-            btnGenerateMCE.FlatAppearance.BorderSize = 3;
+            btnGenerateMCE.FlatAppearance.BorderColor = Color.Silver;
             btnGenerateMCE.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
             btnGenerateMCE.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
             btnGenerateMCE.FlatStyle = FlatStyle.Flat;
@@ -134,7 +134,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             DropDownMenuPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             DropDownMenuPanel.Controls.Add(btnLogout, 0, 1);
             DropDownMenuPanel.Controls.Add(btnAccount, 0, 0);
-            DropDownMenuPanel.Location = new Point(187, 35);
+            DropDownMenuPanel.Location = new Point(187, 30);
             DropDownMenuPanel.Name = "DropDownMenuPanel";
             DropDownMenuPanel.RowCount = 2;
             DropDownMenuPanel.RowStyles.Add(new RowStyle());
@@ -199,7 +199,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             btnViewBOM.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnViewBOM.BackColor = Color.FromArgb(112, 70, 97);
-            btnViewBOM.FlatAppearance.BorderSize = 3;
+            btnViewBOM.FlatAppearance.BorderColor = Color.Silver;
             btnViewBOM.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
             btnViewBOM.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
             btnViewBOM.FlatStyle = FlatStyle.Flat;
@@ -217,7 +217,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             btnHome.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             btnHome.BackColor = Color.FromArgb(112, 70, 97);
-            btnHome.FlatAppearance.BorderSize = 3;
+            btnHome.FlatAppearance.BorderColor = Color.Silver;
             btnHome.FlatAppearance.MouseDownBackColor = Color.FromArgb(152, 136, 146);
             btnHome.FlatAppearance.MouseOverBackColor = Color.FromArgb(60, 38, 52);
             btnHome.FlatStyle = FlatStyle.Flat;
@@ -235,10 +235,10 @@ namespace BoM_and_MCE_Generator_Reloaded
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(152, 136, 146);
+            BackColor = Color.FromArgb(112, 70, 97);
+            Controls.Add(DropDownMenuPanel);
             Controls.Add(btnViewBOM);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(DropDownMenuPanel);
             Controls.Add(btnGenerateMCE);
             Controls.Add(btnGenerateBOM);
             Controls.Add(btnHome);

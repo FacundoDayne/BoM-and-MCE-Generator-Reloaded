@@ -15,12 +15,6 @@ namespace BoM_and_MCE_Generator_Reloaded
         Label width, height;
         UserControl userControl;
 
-        private void MainPanel_GenerateBOM_SizeChanged(object sender, EventArgs e)
-        {
-            width.Text = "Width: " + this.Width;
-            height.Text = "Height: " + this.Height;
-
-        }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
@@ -31,11 +25,6 @@ namespace BoM_and_MCE_Generator_Reloaded
         {
             InitializeComponent();
             userControl = this;
-            width = label1;
-            height = label2;
-            width.Text = "Width: " + this.Width;
-            height.Text = "Height: " + this.Height;
-            this.SizeChanged += MainPanel_GenerateBOM_SizeChanged;
             this.btnGenerate.Click += btnGenerate_Click;
         }
 

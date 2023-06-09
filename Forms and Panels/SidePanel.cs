@@ -1,4 +1,5 @@
 ﻿
+using BoM_and_MCE_Generator_Reloaded.Forms_and_Panels.MainPanels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,7 @@ namespace BoM_and_MCE_Generator_Reloaded
             btnGenerateMCE.Click += requestChange;
             btnViewBOM.Click += requestChange;
             btnHome.Click += requestChange;
+            btnAccount.Click += requestChange;
         }
 
         private void btnDropdown_Click(object sender, EventArgs e)
@@ -54,13 +56,16 @@ namespace BoM_and_MCE_Generator_Reloaded
                     LandingForm.landingForm.maskChange(new MainPanel_GenerateBOM());
                     break;
                 case "btnGenerateMCE":
-                    LandingForm.landingForm.maskChange(new MainPanel_GenerateMCE(null));
+                    LandingForm.landingForm.maskChange(new MainPanel_GenerateMCE());
                     break;
                 case "btnViewBOM":
                     LandingForm.landingForm.maskChange(new MainPanel_ViewBOM());
                     break;
                 case "btnHome":
                     LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
+                    break;
+                case "btnAccount":
+                    LandingForm.landingForm.maskChange(new MainPanel_Account(LandingForm.landingForm.userData.Username));
                     break;
             }
         }

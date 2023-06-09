@@ -27,6 +27,13 @@ namespace BoM_and_MCE_Generator_Reloaded
             this.txtPassword.KeyPress += keyPress;
             this.VisibleChanged += Login_Load;
             this.btnForget.Click += forgetPassword;
+            this.btnSignUp.Click += BtnSignUp_Click;
+        }
+
+        private void BtnSignUp_Click(object? sender, EventArgs e)
+        {
+            LandingForm.landingForm.maskChange(new MainPanel_Account());
+            this.Hide();
         }
 
         private void forgetPassword(object sender, EventArgs e)
@@ -84,6 +91,7 @@ namespace BoM_and_MCE_Generator_Reloaded
         private void btnLogin_Click(object sender, EventArgs e)
         {
             LandingForm.landingForm.username = txtUsername.Text.ToString();
+            LandingForm.landingForm.userData.Username = txtUsername.Text;
             LandingForm.landingForm.changeText();
             LandingForm.landingForm.maskChange(new MainPanel_LandingPanel());
             this.Hide();
